@@ -3,9 +3,9 @@ Minimal Perfect Hashes
 
 A Julia module for generating minimal perfect hash functions for an array of strings:
 ```
-julia> testary = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-julia> mph = MinimalPerfectHash(testary)
-julia> results = map((x) -> hash(x, mph), testary)
+julia> months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
+julia> mph = MinimalPerfectHash(months)
+julia> results = map((x) -> hash(x, mph), months)
 12-element Int64 Array:
   1
   2
