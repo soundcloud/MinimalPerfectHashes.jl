@@ -12,7 +12,7 @@ before_install:
     - git config --global user.name "Travis User"
     - git config --global user.email "travis@example.net"
 script:
-    - julia -e 'versioninfo(); Pkg.init(); Pkg.add("Graphs"); Pkg.update();'
+    - julia -e 'versioninfo(); Pkg.init(); Pkg.add("Graphs");'
     - mkdir -p ~/.julia/MinimalPerfectHashes
     - cp -R ./* ~/.julia/MinimalPerfectHashes/
     - julia ~/.julia/MinimalPerfectHashes/test/run_tests.jl
