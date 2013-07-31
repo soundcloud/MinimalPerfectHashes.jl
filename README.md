@@ -31,6 +31,8 @@ Using MinimalPerfectHashes.jl requires that the following software be installed:
 - [Julia](https://github.com/JuliaLang/julia) — The Julia language itself.
 - [Graphs.jl](https://github.com/JuliaLang/Graphs.jl) — Julia's graphs package.
 
+MinimalPerfectHashes.jl depends on the latest changes to Graphs.jl. If you get errors from Graphs.jl ```cd ~/.julia/Graphs/```, ```git checkout master```, and ```git pull```.
+
 ### Installation
 
 MinimalPerfectHashes.jl should be available from METADATA.jl. To install MinimalPerfectHashes.jl, use the following:
