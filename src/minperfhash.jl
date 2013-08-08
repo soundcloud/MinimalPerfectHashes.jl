@@ -98,7 +98,6 @@ function mapping{T <: String}(words::Array{T})
       u = flooredmod((t1[1:wordLen]' * wordInd)[1], n)
       v = flooredmod((t2[1:wordLen]' * wordInd)[1], n)
       edg = add_edge!(G, V[u+1], V[v+1])
-      #edg.attributes["word"] = words[i]
       edg.attributes["h"] = i - 1
     end
 
