@@ -29,7 +29,7 @@ This is great for creating memory efficient lookup tables with an O(1) access ti
 Using MinimalPerfectHashes.jl requires that the following software be installed:
 
 - [Julia](https://github.com/JuliaLang/julia) — The Julia language itself.
-- [Graphs.jl](https://github.com/JuliaLang/Graphs.jl) — Julia's graphs package. Version 0.2.4 or greater.
+- [Graphs.jl](https://github.com/JuliaLang/Graphs.jl) — Julia's graphs package, version 0.2.4 or greater.
 
 ### Installation
 
