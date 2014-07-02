@@ -20,8 +20,8 @@ type MinimalPerfectHash
     ExEdge{ExVertex},
     Array{ExVertex,1},
     Array{ExEdge{ExVertex},1},
-    Array{Array{ExVertex,1},1},
     Array{Array{ExEdge{ExVertex},1},1}}
+  #Array{Array{ExVertex,1},1},
   g::Array{Int64,1}
   m::Int64
   n::Int64
@@ -64,7 +64,7 @@ end
 
 
 function buildgraph(n::Int)
-  G = graph(ExVertex, ExEdge{ExVertex}, is_directed = false)
+  G = graph(Array(ExVertex,0), Array(ExEdge{ExVertex},0), is_directed = false)
   for i = 1:n
     add_vertex!(G, "edge:" * string(i))
   end
@@ -75,7 +75,7 @@ end
 function mapping{T <: String}(words::Array{T})
   numwords = length(words)
   uniqChars = unique(collect(join(words)))
-  maxwl = max(collect(map((x) -> length(x), words)))
+  maxwl = maximum(collect(map((x) -> length(x), words)))
 
   n = int(25/12 * numwords)
   t1 = Array(Int64, maxwl)

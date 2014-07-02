@@ -11,7 +11,7 @@ mph = MinimalPerfectHash(months)
 results = unique(map((x) -> hash(x, mph), months))
 
 @test length(results) == 12
-@test max(results)    == 12
-@test min(results)    == 1
+@test maximum(results)    == 12
+@test minimum(results)    == 1
 
 
