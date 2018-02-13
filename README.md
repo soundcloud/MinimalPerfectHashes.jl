@@ -1,4 +1,4 @@
-##Minimal Perfect Hashes
+## Minimal Perfect Hashes
 
 [![Build Status](https://travis-ci.org/soundcloud/MinimalPerfectHashes.jl.png)](https://travis-ci.org/soundcloud/MinimalPerfectHashes.jl)
 
