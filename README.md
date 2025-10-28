@@ -1,6 +1,5 @@
 ## Minimal Perfect Hashes
 
-[![Build Status](https://travis-ci.org/soundcloud/MinimalPerfectHashes.jl.png)](https://travis-ci.org/soundcloud/MinimalPerfectHashes.jl)
 
 A Julia module for generating minimal perfect hash functions for an array of strings:
 ```julia
@@ -53,5 +52,4 @@ You can check for @mweiden on the [#julia IRC channel](http://webchat.freenode.n
 
 ### Metadata
 
-  * Owner: [Matt Weiden](https://github.com/mweiden), [SoundCloud Ltd.](http://soundcloud.com)
   * Status: Research/prototyping
